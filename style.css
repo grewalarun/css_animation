@@ -1,0 +1,50 @@
+h1{font-family:nuon;}
+
+div.card, div.card1 {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    height: 550px;
+    padding: 20px;
+    
+   
+}
+
+div.card{    
+	background-color: #fff;
+	width: 100%;
+}
+
+.cards {
+    margin: 0 auto;
+    position: relative;
+    width: 350px;
+}
+
+.card1 {
+    position: absolute;
+    top: 0px;
+    display:none;
+    background-color: #00CC99;
+    width: 50%;
+    
+}
+
+img.cycle {
+    width: 100%;
+    transition: all 1s;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+img.cycle:hover {
+    transform: rotate(10deg);
+}
+
+
+   @keyframes example {
+    from {transform: rotate(150deg);}
+    to {transform: rotate(360deg);}
+}
+
+

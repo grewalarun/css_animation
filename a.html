@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Animation</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+	
+
+<h2>CSS animation</h2>
+<p id="card2">show second card</p>
+<div class="cards">
+<div class="card">
+
+<h3>hello</h3>
+  <img src="cycle.png" class="cycle"/>
+
+</div>
+<div class="card1">
+
+<h3>Main Menu</h3>
+<h4>Menu 1</h4>  
+<h4>Menu 2</h4>
+<h4>Menu 3</h4>
+<h4>Menu 4</h4>
+</div>
+
+</div>
+
+ <script src="jquery-1.10.2.js"></script>
+ <script src="jquery-ui.js"></script>
+
+
+<script>
+
+ 
+
+$(document).ready(function(){	
+	$("#card2").click(function(){
+	     $(".card1" ).toggle( "slide" );
+	});
+	
+$( window ).resize(function() {
+ alert( $( window ).width() );
+});	
+
+	//1500
+var ww=$('body').width();
+$('#card2').html('<h1>'+ ww+'px </h1>');
+
+//800
+$(window).resize(function() {
+  var ww = $(window).width();});
+
+
+});
+
+</script>
+</body>
